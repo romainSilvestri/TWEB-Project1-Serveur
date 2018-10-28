@@ -1,0 +1,29 @@
+{
+  "name": "github-analytics",
+  "version": "1.0.0",
+  "description": "Github analytics",
+  "main": "app.js",
+  "scripts": {
+    "start": "linter.sh && cat loglint && node app.js",
+    "dev": "nodemon --watch app.js --watch src",
+    "test": "mocha"
+  },
+  "author": "Olivier Kopp, Romain Silvestri",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "cors": "^2.8.4",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.7",
+    "node-fetch": "^2.2.0"
+  }
+}
